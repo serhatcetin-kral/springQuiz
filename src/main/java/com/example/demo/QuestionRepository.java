@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface QuestionRepository extends JpaRepository<Questions, Integer>{
 	
 	
-	
+	List<Questions> findByCatagory(String catagory);
 
 }
